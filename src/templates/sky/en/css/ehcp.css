@@ -1,0 +1,18 @@
+.button-ehcp {
+  display:inline-block;
+  color: #fff;
+  padding: 3px 3px;
+  background-color: #6ec5e4;
+  border: 0;
+  /* width: 400px; */
+  margin: 3px;
+}
+
+.button-ehcp:hover {
+  display:inline-block;
+  text-decoration: none;
+  color: #fff;
+  background: #2d7e9a;
+  /* width: 400px; */
+  margin: 3px;
+}

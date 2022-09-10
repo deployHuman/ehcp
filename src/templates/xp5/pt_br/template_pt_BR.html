@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta author="Thanks to deconectat from www.ehcp.net for this greate template for ehcp">
+	<title>EHCP - Painel de Controle de Hospedagem - {myip}</title>	
+	<link href="{stylefile}" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- left -->
+<div style="height: 100%;" id="divLeft">
+
+<div id="divMenuSearch">
+<form method=post action="index.php?op=listdomains">
+<input type=text name=aranan value='' id="inputMenuSearch">
+<select name='arananalan' id="selectMenuSearch">
+	<option value='domainname' >Domínio</option>
+	<option value='panelusername' >Usuário</option>
+</select>
+<input type=submit value=Buscar id="submitMenuSearch">
+</form>
+</div>
+<br />&nbsp;
+
+<div id="divMenu">
+<table id="Table1" border="0" cellpadding="0" cellspacing="0" width="185">
+<tbody><tr>
+	<td colspan="3" class="InfoPaneHeader" id="tdInfoActivity" width="185">Menu Principal</td>
+</tr>
+<tr>
+	<td class="InfoPaneFrame" width="1"><img src="1x1.gif" height="1" width="1"></td>
+	<td class="InfoPaneRow" width="183">
+	<a href="index.php"><b>Home</b></a><br>
+	<a href="index.php?op=resellers"><b>Revendedores</b></a><br>
+	<a href="index.php?op=listpanelusers"><b>Clientes</b></a><br>
+	<a href="index.php?op=listselectdomain"><b>Domínios</b></a><br>
+
+	<a href="index.php?op=addDomainToThisPaneluser"><b>Adicionar Domínio Facilitado para meu ftp</b></a><br>
+	<a href="index.php?op=adddomaineasy">Adicionar Domínio Facilitado</a><br>
+	<a href="index.php?op=adddomain">Adicionar Domínio</a><br><br>
+
+	<a href="?op=otheroperations">Menu Antigo</a>
+	<br />&nbsp;
+	</td>
+	<td class="InfoPaneFrame" width="1"><img src="1x1.gif" height="1" width="1"></td>
+</tr>
+
+<tr>
+	<td colspan="3" class="InfoPaneFrame" width="185"></td>
+</tr>
+</tbody></table>
+</div>
+<br />&nbsp;
+
+<div id="divMenu">
+<table id="Table1" border="0" cellpadding="0" cellspacing="0" width="185">
+<tbody><tr>
+	<td colspan="3" class="InfoPaneHeader" id="tdInfoActivity" width="185">Ferramentas</td>
+</tr>
+<tr>
+	<td class="InfoPaneFrame" width="1"><img src="1x1.gif" height="1" width="1"></td>
+	<td class="InfoPaneRow" width="183">
+	<a target="_blank" href="webmail">Webmail</a><br>
+	<a target="_blank" href="/phpmyadmin">Phpmyadmin</a><br>
+	<a target="_blank" href="net2ftp">WebFtp</a>
+
+	<br />&nbsp;
+	</td>
+	<td class="InfoPaneFrame" width="1"><img src="1x1.gif" height="1" width="1"></td>
+</tr>
+
+<tr>
+	<td colspan="3" class="InfoPaneFrame" width="185"></td>
+</tr>
+</tbody></table>
+</div>
+
+<br />&nbsp;
+
+<div id="divMenu">
+<table id="Table1" border="0" cellpadding="0" cellspacing="0" width="185">
+<tbody><tr>
+	<td colspan="3" class="InfoPaneHeader" id="tdInfoActivity" width="185">System</td>
+</tr>
+<tr>
+	<td class="InfoPaneFrame" width="1"><img src="1x1.gif" height="1" width="1"></td>
+	<td class="InfoPaneRow" width="183">	
+	<a target="_blank" href="sysinfo">Informações do Sistema</a><br>
+	<a href="index.php?op=options"><b>Opções</b></a><br>
+	<a href="index.php?op=changetemplate">Modelos</a><br>
+	<a href="http://www.ehcp.net" target="_blank">EHCP Home</a><br><br>
+	<a href="?op=logout"><b>Sair</b></a>
+	<br />&nbsp;
+	</td>
+	<td class="InfoPaneFrame" width="1"><img src="1x1.gif" height="1" width="1"></td>
+</tr>
+
+<tr>
+	<td colspan="3" class="InfoPaneFrame" width="185"></td>
+</tr>
+</tbody></table>
+</div>
+<div id="divCopy">
+Powered by <a href="http://www.ehcp.net/" target="_blank">EHCP</a><br>
+{ehcpversion}
+</div>
+</div>
+
+<!-- right -->
+<div id="divMainRightHeader"><div id="divBanner"><span style="align: right;">Bem Vindo, <b>{username}</b>! <a href="?op=logout">Sair</a></span><br />{banner}</div></div>
+<div id="divMainContainer">
+<div id="divMain" align="left">
+      
+      {selecteddomain}
+      {ickisim}
+      <br><br>
+<iframe marginwidth="0" marginheight="0" scrollbars="none" src="http://www.ehcp.net/latest/" frameborder="0" height="120" scrolling="no" width="600"></iframe>
+<br>
+<script type="text/javascript"><!--
+google_ad_client = "pub-0768633782379013";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text_image";
+google_ad_channel = "";
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+</div>
+
+</body></html>

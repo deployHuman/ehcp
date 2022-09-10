@@ -1,0 +1,85 @@
+<!-- <h1>Server Admin Main Menu</h1> -->
+<!--
+Icons:
+http://www.iconspedia.com/pack/nx10-1-6/
+http://www.iconspedia.com/pack/devcom-network-347/
+http://www.iconspedia.com/pack/crystal-clear-actions-1303/
+http://www.iconspedia.com/pack/soft-17-0/
+-->
+<table id="tblcontent"><tr>
+<td>
+<div class="content">
+<div class="title"><img src="{templatedir}/domain.png"> Domain Operations</div>
+      <ul>
+	<li><a href="?op=listdomains">Listar Domínios</a></li>
+        <li><a href="?op=customhttp">HTTP Customizado </a></li>
+        <li><a href="?op=customdns">DNS Customizado </a></li>
+	<li><a href="?op=subdomains">SubDomínios </a></li>
+	<li><a href="?op=directories">Diretórios Protegidos por Senha </a></li>
+      </ul>
+
+</div>
+<br />
+</td><td>
+<div class="content">
+<div class="title"><img src="{templatedir}/ftp.png"> FTP</div>
+      <ul>
+        <li><a href="?op=listallftpusers">Listar Usuários do FTP / Alterar Senha</a></li>      
+	<li><a href="?op=editftpuser">Alterar Senha do FTP / Configurações</a></li>
+        <li><a href="net2ftp" target="_blank">WebFTP</a></li>
+      </ul>
+<br /><br />
+</div>
+<br />
+</td></tr><tr><td>
+<div class="content">
+<div class="title"><img src="{templatedir}/email.png"> Email</div>
+      <ul>
+        <li><a href="?op=listemailusers">Listar Usuários do Email / Alterar Senhas</a></li>
+        <li><a href="?op=addemailuser">Adicionar Usuário de Email</a></li>
+        <li><a href="?op=emailforwardings">Listar/Adicionar encaminhamentos de email</a></li>
+
+      </ul>
+<br />
+</div>
+<br />
+</td><td>
+<div class="content">
+<div class="title"><img src="{templatedir}/mysql.png"> MySQL</div>
+<ul>
+        <li><a href="?op=addmysqldb">Adicionar Banco de Dados e Usuários Mysql</a></li>
+        <li><a href="?op=addmysqldbtouser">Adicionar Banco de Dados Mysql para outro usuário existente</a></li>
+        <li><a href="?op=dbadduser">Adicionar usuário Mysql para banco de dados existente</a></li>
+        <li><a href="?op=domainop&amp;action=listdb">Listar / Deletar Banco de Dados Mysql</a></li>
+
+</ul>
+</div>
+<br />
+</td></tr>
+<tr><td>
+<div class="content">
+<div class="title"><img src="{templatedir}/other.png"> Outros</div>
+      <ul>
+        <li><a href="?op=addscript">Instalador Fácil por scripts</a></li>
+        <li><a target="_blank" href="http://www.{selecteddomain}/webstats">Estátisticas</a></li>
+      </ul>
+<br /><br /><br />
+</div>
+<br />
+</td><td>
+<div class="content">
+<div class="title"><img src="{templatedir}/settings.png"> Configurações de Domínio</div>
+<ul>
+        <li><a href="?op=editdomain">Ativar / Desativar domínio</a></li>
+        <li><a href="?op=transferdomain">Transferir domínio</a></li>
+        <li><a href="?op=addredirect">Redirecionar Para Outro domínio/url</a></li>
+	<li><a href="?op=changemypass">Alterar minha senha</a></li>
+</ul>
+</div>
+</td></tr>
+</table>
+<div class="footer">
+<pre>
+{banner}
+</pre>
+</div>

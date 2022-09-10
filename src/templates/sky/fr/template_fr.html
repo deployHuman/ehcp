@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+
+	<meta charset="utf-8">
+	
+	
+	<!-- Global stylesheets -->
+	<link href="{templatedir}/css/reset.css" rel="stylesheet" type="text/css">
+	<link href="{templatedir}/css/common.css" rel="stylesheet" type="text/css">
+	<link href="{templatedir}/css/form.css" rel="stylesheet" type="text/css">
+	<link href="{templatedir}/css/standard.css" rel="stylesheet" type="text/css">
+	
+	<!-- Comment/uncomment one of these files to toggle between fixed and fluid layout -->
+	<!--<link href="{templatedir}/css/960.gs.css" rel="stylesheet" type="text/css">-->
+	<link href="{templatedir}/css/960.gs.fluid.css" rel="stylesheet" type="text/css">
+	
+	<!-- Custom styles -->
+	<link href="{templatedir}/css/simple-lists.css" rel="stylesheet" type="text/css">
+	<link href="{templatedir}/css/block-lists.css" rel="stylesheet" type="text/css">
+	
+	
+	
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="{templatedir}/favicon.ico">
+	<link rel="icon" type="image/png" href="{templatedir}/favicon-large.png">
+	
+	<!-- Generic libs -->
+	<script type="text/javascript" src="{templatedir}/js/html5.js"></script>				<!-- this has to be loaded before anything else -->
+	<script type="text/javascript" src="{templatedir}/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="{templatedir}/js/old-browsers.js"></script>		<!-- remove if you do not need older browsers detection -->
+	
+	<!-- Template libs -->
+	<script type="text/javascript" src="{templatedir}/js/jquery.accessibleList.js"></script>
+	<script type="text/javascript" src="{templatedir}/js/searchField.js"></script>
+	<script type="text/javascript" src="{templatedir}/js/common.js"></script>
+	<script type="text/javascript" src="{templatedir}/js/standard.js"></script>
+	<!--[if lte IE 8]><script type="text/javascript" src="{templatedir}/js/standard.ie.js"></script><![endif]-->
+	<script type="text/javascript" src="{templatedir}/js/jquery.tip.js"></script>
+	<script type="text/javascript" src="{templatedir}/js/jquery.hashchange.js"></script>
+	<script type="text/javascript" src="{templatedir}/js/jquery.contextMenu.js"></script>
+	
+	<!-- Custom styles lib -->
+	<script type="text/javascript" src="{templatedir}/js/list.js"></script>
+	
+</head>
+
+<body>
+<!-- The template uses conditional comments to add wrappers div for ie8 and ie7 - just add .ie or .ie7 prefix to your css selectors when needed -->
+<!--[if lt IE 9]><div class="ie"><![endif]-->
+<!--[if lt IE 8]><div class="ie7"><![endif]-->
+	
+	<!-- Header -->
+	
+	<!-- Server status -->
+	<header><div class="container_12">
+		
+		<p id="skin-name"><small>EHCP Sky Skin<br>par 7SKYHOST</small> <strong>1.0</strong></p>
+		<div class="server-info">Serveur: <strong>{webserver}</strong></div>
+		<div class="server-info"><a href="z7/phpinfo.php" target="_blank">PHP Info</a></div>
+		
+	</div></header>
+	<!-- End server status -->
+
+	<!-- Main nav -->
+	<nav id="main-nav">
+		
+		<ul class="container_12">
+			<li class="home current"><a href="index.php" title="Accueil">Accueil</a>
+				<ul>
+					<li><a href="index.php" title="Tableau de bord">Tableau de bord</a></li>
+					<li><a href="index.php?op=otheroperations" title="Autres Op&eacute;rations">Autres Op&eacute;rations</a></li>
+					<li><a href="index.php?op=serverstatus" title="Statut du Serveur">Statut du Serveur</a></li>
+					<li><a href="index.php?op=options" title="Options">Options</a></li>
+				</ul>
+			
+			</li>
+			<li class="write"><a href="#" title="Comptes Email">Email</a>
+				<ul>
+					<li><a href="?op=listallemailusers" title="Liste de tous les comptes Email">Liste des comptes Email</a></li>
+					<li><a href="?op=addemailuser" title="Ajouter une addresse email &agrave; un Domaine donn&eacute;">Ajouter une adresse Email</a></li>
+				</ul>
+			</li>
+			<li class="comments"><a href="#" title="Bases de donn&eacute;es MySQL">MySQL</a>
+				<ul>
+					<li><a href="?op=domainop&amp;action=listdb" title="Liste de toutes les bases de donn&eacute;es MySQL">Liste des bases</a></li>
+					<li><a href="?op=addmysqldb" title="Ajouter une base de don&eacute;es MySQL &amp; un utilisateur &agrave; un Domaine">Cr&eacute;er une base &amp; son utilisateur</a></li>
+					<li><a href="?op=addmysqldbtouser" title="Affecter une base de donn&eacute;es MYSQL &agrave un utilisateur MYSQL existant">Affecter une base &agrave; un utilisateur</a></li>
+					<li><a href="?op=dbadduser" title="Ajouter un utilisateur MySQL pour une base de donn&eacute;es existante">Ajouter un utilisateur &agrave; une base</a></li>
+				</ul>
+			</li>
+			<li class="medias"><a href="#" title="Comptes FTP">FTP</a>
+				<ul>
+					<li><a href="?op=listallftpusers" title="Lister tous les utilisateurs de FTP">Utilisateurs FTP</a></li>
+					<li><a href="?op=addftpuser" title="Ajouter un nouvel utilisateur FTP<br />/var/www/vhosts/<b>ftpusername</b>">Nouvel utilisateur</a></li>
+					<li><a href="?op=addsubdirectorywithftp" title="Ajoute un utilisateur FTP &agrave; un Domaine sp&eacute;cifique">Cr&eacute;er un utilisateur pour un Domaine</a></li>
+					<li><a href="?op=addsubdomainwithftp" title="Ajoute un utilisateur FTP &agrave; un Sous-Domaine sp&eacute;cifique">Cr&eacute;er un utilisateur pour un Sous-Domaine</a></li>
+				</ul>
+			</li>
+			<li class="users"><a href="#" title="Utilisateurs du Panel">Users</a>
+				<ul>
+					<li><a href="?op=listpanelusers" title="Liste tous les utilisateurs du Panel et les clients">Utilisateurs du Panel</a></li>
+					<li><a href="?op=addpaneluser" title="Ajoute un nouvel utilisateur du Panel ou un nouveau client">Cr&eacute;er un utilisateur du Panel</a></li>
+				</ul>
+			</li>
+			<li class="stats"><a href="index.php?op=serverstatus" title="Statut du serveur">Statut</a></li>
+			<li class="settings"><a href="index.php?op=options" title="Options">Options</a></li>
+			<li class="backup"><a href="#" title="Sauvegardes">Sauvegardes</a>
+			<ul>
+			<li><a href="index.php?op=dobackup" title="Cr&eacute;er une sauvegarde de ce serveur">Sauvegarder le serveur</a></li>
+			<li><a href="index.php?op=dorestore" title="Restaurer une sauvegarde">Restaurer une sauvegarde</a></li>
+			<li><a href="index.php?op=listbackups" title="Liste des sauvegardes de ce serveur">Liste des sauvegardes</a></li>
+			</ul></li>
+		</ul>
+	</nav>
+	<!-- End main nav -->
+	
+	<!-- Sub nav -->
+	<div id="sub-nav"><div class="container_12">
+		
+		<!-- 
+		<a href="#" title="Aide" class="nav-button"><b>Aide</b></a> 
+		-->
+	<!--
+		<form method=post action="index.php?op=listdomains">
+		<div id="inputMenuSearch">
+                <input type=text name=aranan value='' id="search_txt">
+                <input type=submit value='' id="submitMenuSearch">
+		</div>
+		
+		<select id="select_search" name='arananalan' >
+                    <option value='domainname' >Domaine</option>
+                    <option value='panelusername' >Nom d&apos;utilisateur</option>
+                    <option value='reseller' >Revendeur</option>
+                </select> 
+        </form>
+	-->
+	</div></div>
+	<!-- End sub nav -->
+	
+	<!-- Status bar -->
+	<div id="status-bar"><div class="container_12">
+	
+		<ul id="status-infos">
+			<li class="spaced">Connect&eacute; sous: <strong>{username}</strong></li>
+			<li><a href="?op=logout" class="button red" title="D&eacute;connexion d&apos;EHCP"><span class="smaller">DECONNECTER</span></a></li>
+		</ul>
+		<div align="left">Version d&apos;EHCP: <strong>{ehcpversion}</strong></div>
+
+	
+	
+	</div></div>
+	<!-- End status bar -->
+	
+	<div id="header-shadow"></div>
+	<!-- End header -->
+	
+	<!-- Always visible control bar -->
+	<div id="control-bar" class="grey-bg clearfix"><div class="container_12">
+	
+		<div class="float-left">
+			{selecteddomain}
+		</div>
+		
+			
+	</div></div> 
+	<!-- End control bar -->
+	
+	
+	<section class="grid_12">
+			<div class="block-border"><div class="block-content">
+				<h1>EHCP</h1>
+		{ickisim}
+      </div>
+	  </div>
+	</section>
+	
+	
+</body>
+</html>
